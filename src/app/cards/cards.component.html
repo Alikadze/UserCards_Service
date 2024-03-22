@@ -1,0 +1,8 @@
+<div class="cardCont">
+  <div *ngFor="let user of UserInfo.Users; let i = index" class="UserCard">
+    <div>User {{ i + 1 }}:</div>
+    <div>Username: {{ user.userName | json }}</div>
+    <div>Email: {{ user.mail | json }}</div>
+    <div>Number: {{ user.number | json }}</div>
+  </div>
+</div>
